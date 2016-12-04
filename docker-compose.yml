@@ -1,0 +1,8 @@
+app:
+  image: fwed/grab-manga:gally
+  ports:
+    - 8996:8100
+  volumes:
+    - /home/apps/workspace/docker/js/GrabManga:/home/docker/GrabManga
+  net: "host_grabmanga"
+  tty: true
